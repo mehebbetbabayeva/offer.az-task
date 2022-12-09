@@ -4,4 +4,79 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Poppins', sans-serif;;
 }
+:root{
+    --orange:#FF7010;
+    --blue:#657485;
+    --navfontsize:18px;
+}
+/* start header */
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
+}
+.container{
+    max-width: 1170px;
+    margin:0 auto;
+}
+.container .img-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.container .img-nav img{
+    width: 130px;
+    height: 80px;
+    padding-top: 5px;
+}
+.container .img-nav nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+}
+.container .img-nav ul{
+    display: flex;
+}
+.container .img-nav ul li{
+    margin-left: 20px;
+}
+.container .img-nav nav ul li a {
+    font-size: var(--navfontsize);
+    font-weight: bold;
+}
+.container .img-nav nav ul li .active{
+    color: var(--orange);
+}
+/* end header */
+
+/* start main */
+
+/* start section entrance */
+main #first-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../image/hero-bg.jpg);
+    background-size:cover;
+    background-position:center;
+}
+main #first-section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #001935;
+    opacity: 0.8;
+}
+main #first-section .first-section-content{
+   position: relative;
+}
+/* end section enrtance */
+
+
+/* end main */
