@@ -10,6 +10,11 @@
     --orange:#FF7010;
     --blue:#657485;
     --navfontsize:18px;
+    --psize:17px;
+    --h1size:50px;
+    --white: #fff;
+    --darkblue:#001935;
+    --inputcolor:gray;
 }
 /* start header */
 header{
@@ -17,15 +22,16 @@ header{
     height: 70px;
     position: fixed;
     z-index: 5;
-    background-color: #fff;
+    background-color: var(--white);
 }
 .container{
-    max-width: 1170px;
+    max-width: 1140px;
     margin:0 auto;
 }
 .container .img-nav{
     display: flex;
     justify-content: space-between;
+
 }
 .container .img-nav img{
     width: 130px;
@@ -58,11 +64,12 @@ header{
 /* start section entrance */
 main #first-section{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     background-image: url(../image/hero-bg.jpg);
     background-size:cover;
     background-position:center;
+
 }
 main #first-section .overlay{
     position: absolute;
@@ -70,13 +77,111 @@ main #first-section .overlay{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #001935;
+    background-color:var(--darkblue);
     opacity: 0.8;
 }
 main #first-section .first-section-content{
    position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   padding: 100px 0;
+}
+main #first-section .first-section-content h1{
+   font-size: var(--h1size);
+   font-weight: 600;
+   color:var(--white);
+}
+main #first-section .first-section-content p{
+    font-size: var(--psize);
+    color: var(--white);
+    margin-bottom: 15px;
+    width: 750px;
+}
+main #first-section .first-section-content p span{
+    color: var(--orange);
+}
+main #first-section .first-section-content .input-group {
+    margin: 20px 0;
+}
+main #first-section .first-section-content .input-group , .social-group ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #first-section .first-section-content .input-group select{
+    color: var(--inputcolor) ;
+    padding: 14px 20px;
+    width: 275px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 18px;
+    margin-right: 10px;
+    
+}
+main #first-section .first-section-content .social-group{
+    margin: 20px 0;
+}
+main #first-section .first-section-content .social-group ul li a{
+    color: var(--white);
+}
+main #first-section .first-section-content .social-group ul li{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.telegram{
+    background-color:  rgba(34, 158, 217, 0.3);
+}
+.linkedin{
+    background-color: rgba(0, 119, 181, 0.3);
+}
+.instagram{
+    background-color:  linear-gradient(to right bottom, rgba(64, 93, 230, 0.3), rgba(88, 81, 216, 0.3), rgba(131, 58, 180, 0.3), rgba(193, 53, 132, 0.3), rgba(225, 48, 108, 0.3), rgba(253, 29, 29, 0.3), rgba(245, 96, 64, 0.3), rgba(247, 119, 55, 0.3), rgba(252, 175, 69, 0.3), rgba(255, 220, 128, 0.3), rgba(255, 255, 255, 0.3));
+    background-image: linear-gradient(to right bottom, rgba(64, 93, 230, 0.3), rgba(88, 81, 216, 0.3), rgba(131, 58, 180, 0.3), rgba(193, 53, 132, 0.3), rgba(225, 48, 108, 0.3), rgba(253, 29, 29, 0.3), rgba(245, 96, 64, 0.3), rgba(247, 119, 55, 0.3), rgba(252, 175, 69, 0.3), rgba(255, 220, 128, 0.3), rgba(255, 255, 255, 0.3));
+}
+.facebook{
+    background-color: rgba(59, 89, 152, 0.3);
+}
+main #first-section .first-section-content .input-group button{
+    color: var(--white);
+    width: 120px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    padding:  18px;
+    text-align: center;
 }
 /* end section enrtance */
+
+/* start list section */
+main #list-section{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+main #list-section .container .list-contant{
+    display: flex;
+    flex-direction: column;
+}
+main #list-section .container .list-contant .list-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main #list-section .container .list-contant .list-title .title{
+    display: flex;
+    flex-direction: column;
+}
+/* end list section */
 
 
 /* end main */
