@@ -38,6 +38,9 @@ header{
     height: 80px;
     padding-top: 5px;
 }
+.container .img-nav img:hover{
+    transform: rotate3d(0, 1, 0, 180deg)
+}
 .container .img-nav nav{
     height: 70px;
     display: flex;
@@ -320,6 +323,7 @@ main #list-section .container .list-contant .list .list-item ul li a{
 .announce-title  .tit-btn:hover{
     background-color: var(--orange);
 }
+
 .announce-title  .tit-btn:hover a{
     color: var(--white);
 }
@@ -333,6 +337,7 @@ main #list-section .container .list-contant .list .list-item ul li a{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .announce-content .announce-card .card-item{
     width: 24%;
     display: flex;
@@ -345,6 +350,10 @@ main #list-section .container .list-contant .list .list-item ul li a{
     height: 300px;
     padding-left: 10px;
     margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+}
+.announce-content .announce-card .card-item:hover{
+    transform: scale(1.1 );
 }
 .announce-card .card-item span , i {
     color: var(--orange);
@@ -432,6 +441,10 @@ main #list-section .container .list-contant .list .list-item ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in-out;
+}
+.advise-card .advise-card-item:hover{
+    transform: scale(0.9);
 }
 .advise-card-item figure img{
     width: 100%;
