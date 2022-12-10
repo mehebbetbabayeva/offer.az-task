@@ -388,8 +388,103 @@ main #list-section .container .list-contant .list .list-item ul li a{
     display: flex;
     flex-direction: column;
     padding: 30px 0;
+    
+}
+.useful-advise .advise-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.advise-title h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.advise-title .title-line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--orange);
+    margin-bottom: 10px;
+}
+.advise-title p{
+    color: var(--darkblue);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.advise-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+.advise-card .advise-card-item{
+    width: 32%;
+    margin-bottom: 20px;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow:  0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.advise-card-item figure img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.advise-card-item figcaption .date{
+    display: flex;
+    width: 100%;   
+}
+.advise-card-item figcaption{
+    padding: 20px;
+}
+.advise-card-item figcaption .date span{
+    color: var(--darkblue);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.advise-card-item figcaption a{
+    color: var(--darkblue);
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.advise-card-item figcaption a:hover{
+    color: var(--orange);
+}
+.advise-card-item figcaption p{
+    color: var(--darkblue);
+    font-weight: bold;
+    margin-top: 20px;
+}
 /* end useful-advise section */
 
 /* end main */
+
+
+/* start footer */
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--darkblue);
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+    height: 150px;
+    padding-top: 20px;
+}
+.footer-content p{
+    color: var(--white);
+}
+/* end footer */
