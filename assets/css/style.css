@@ -53,6 +53,10 @@ header{
 .container .img-nav nav ul li a {
     font-size: var(--navfontsize);
     font-weight: bold;
+    color: var(--blue);
+}
+.container .img-nav nav ul li a:hover{
+    color: var(--orange);
 }
 .container .img-nav nav ul li .active{
     color: var(--orange);
@@ -157,6 +161,7 @@ main #first-section .first-section-content .input-group button{
     border-radius: 8px;
     padding:  18px;
     text-align: center;
+    cursor: pointer;
 }
 /* end section enrtance */
 
@@ -168,20 +173,223 @@ main #list-section{
 }
 
 main #list-section .container .list-contant{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding-top: 200px;
 }
 main #list-section .container .list-contant .list-title{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
+    margin-bottom: 40px;
 }
 main #list-section .container .list-contant .list-title .title{
     display: flex;
     flex-direction: column;
 }
+main #list-section .container .list-contant .list-title .title h2{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+main #list-section .container .list-contant .list-title .title .line{
+    width: 55px;
+    height: 4px;
+    background-color: var(--orange);
+
+}
+main #list-section .container .list-contant .list-title  .btn{
+    width: 160px;
+    height: 60px;
+    border: 1px solid var(--orange);
+    background-color: var(--white);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+main #list-section .container .list-contant .list-title  .btn:hover{
+    background-color: var(--orange);   
+}
+main #list-section .container .list-contant .list-title  .btn a{
+    color: var(--orange);
+    font-weight: bold;
+}
+main #list-section .container .list-contant .list-title  .btn:hover a{
+    color: var(--white);
+}
+main #list-section .container .list-contant .list{
+    width: 100%;
+    display: flex;
+}
+.list-contant .list .list-item{
+    width: 33.3%;
+}
+main #list-section .container .list-contant .list .list-item ul{
+    display: flex;
+    flex-direction: column;
+    padding-right:15px;
+}
+main #list-section .container .list-contant .list .list-item ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+}
+.list-contant .list .list-item ul li{
+   margin-bottom: 20px;
+}
+.list-contant .list  .list-border{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    padding-left:15px;
+}
+.list-contant .list .list-margin{
+    padding-left: 15px;
+}
+.list-contant .list .list-item ul li a span {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius:5px;
+    padding-right: 10px;
+}
+.list-contant .list .list-item ul li:hover a p{
+    color: var(--orange);
+    transition: 1s;
+}
+.list-contant .list .list-item ul li:hover span{
+    background-color: var(--orange);
+    transition: 1s;
+}
 /* end list section */
 
+/* start announce section */
+#announce {
+    width: 100%;
+    height: auto;
+    background-color: #f2ebeb;
+}
+#announce .announce-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.announce-content .announce-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.announce-title h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.announce-title .title-line{
+    width: 40px;
+    height: 4px;
+    background-color: var(--orange);
+    margin-bottom: 10px;
+}
+.announce-title p{
+    color: var(--darkblue);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.announce-title  .tit-btn{
+    width: 130px;
+    height: 50px;
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.announce-title  .tit-btn:hover{
+    background-color: var(--orange);
+}
+.announce-title  .tit-btn:hover a{
+    color: var(--white);
+}
+.announce-title .tit-btn a{
+    color: var(--orange);
+    font-weight: bold;
+}
+.announce-content .announce-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.announce-content .announce-card .card-item{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-around;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%), 0 6px 6px rgb(0 0 0 / 10%);
+    background-color: var(--white);
+    height: 300px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.announce-card .card-item span , i {
+    color: var(--orange);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.announce-card .card-item a {
+    color: var(--darkblue);
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.announce-card .card-item a:hover{
+    color:var(--orange)
+}
+.announce-card .card-item p{
+    color: gray;
+    overflow: hidden;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.announce-card .card-item  .company{
+    color: var(--darkblue);
+}
+.announce-card .card-item .date {
+    color: gray;
+}
+
+/* end announce section */
+
+
+/*start useful-advise section */
+#useful-advise {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+}
+#useful-advise .useful-advise{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+/* end useful-advise section */
 
 /* end main */
